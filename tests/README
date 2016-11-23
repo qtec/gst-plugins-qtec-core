@@ -1,0 +1,11 @@
+This is a replication of the file structure used by gstreamer repos for ther testing framework. Key points to note:
+
+* All the tests for elements, pipelines or generic gstreamer tests are under check
+
+* The gstreamer unittesting framework is actually a wrapper around check: http://check.sourceforge.net/. You can find more details on that project. Alternatively, if you need to check out the source, you will find it in the gstreamer repo, under libs/gst/check.
+
+* The main sript for running tests is in check/Makefile.am, with (src_dir)/common/check.mak having the definitions of most of the makefile rules.
+
+* If additional resources are required for test exectution, they are expected to be under ./files
+
+* A template showing the basics of creating a unittest can be found under ./check. Do note that it is very rudementary. For additional options in testcase and suite development reffer to the documentation.
