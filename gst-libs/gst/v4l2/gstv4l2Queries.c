@@ -79,7 +79,7 @@ gst_v4l2_queries_parse_set_control(GstQuery * query,
 			ret = FALSE;
 	}
 	if (id) {
-		if(gst_structure_get_int(s, "id", id));
+		if(gst_structure_get_int(s, "id", id))
 			ret = FALSE;
 	}
 	if (val) {
@@ -399,7 +399,7 @@ gst_v4l2_queries_parse_reciever_set_control(GstQuery * query,
 			ret = TRUE;
 	}
 	if (id) {
-		if(gst_structure_get_int(s, "id", id));
+		if(gst_structure_get_int(s, "id", id))
 			ret = TRUE;
 	}
 	if (val) {
@@ -434,7 +434,7 @@ gst_v4l2_queries_parse_reciever_get_control(GstQuery * query,
 			ret = TRUE;
 	}
 	if (id) {
-		if(gst_structure_get_int(s, "id", id));
+		if(gst_structure_get_int(s, "id", id))
 			ret = TRUE;
 	}
 	if (val) {

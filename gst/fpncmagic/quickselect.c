@@ -60,7 +60,7 @@ uint8_t quick_select_uint8_t(uint8_t arr[], int n)
     /* Re-set active partition */
     if (hh <= median)
         low = ll;
-        if (hh >= median)
+    if (hh >= median)
         high = hh - 1;
     }
 }
@@ -112,7 +112,7 @@ uint16_t quick_select_uint16_t(uint16_t arr[], int n)
     /* Re-set active partition */
     if (hh <= median)
         low = ll;
-        if (hh >= median)
+    if (hh >= median)
         high = hh - 1;
     }
 }
